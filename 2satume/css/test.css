@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/*共通部分
+----------------------------*/
+
+html {
+    font-size:100%;
+}
+body {
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.5;
+    color:#432 ;
+    background-image: url(../images/washi2-L.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0.4%;
+}
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    position: absolute;
+    top:70px;
+    left:-150px;
+}
+.contents {
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*header*/
+#top-menu {
+    background-image:url(../images/sushi.jpg); 
+    height:150px;
+    margin-bottom: 30px;
+}
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.logo {
+    width:200px;
+    height:110px;
+    margin-top:20px;
+}
+#home {
+    background-image: url(../images/sushi.jpg);
+    min-height: 100vh;
+}
+nav {
+    position: relative;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    position: relative;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 25px;
+}
+.main-nav a{
+    color:black;
+}
+.main-nav a:hover{
+    background-color:gainsboro;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*ホーム*/
+.home-content {
+    text-align: center;
+    margin-top: 13%;
+}
+.home-content p{
+    font-size: 1.125rem;
+    margin:10px 0 42px;
+}
+.home-content p{
+    color:whitesmoke;
+}
+.page-title {
+    font-size: 5rem;
+    font-family: “STKaiti”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, serif;
+    font-weight: normal;
+    color:whitesmoke;
+}
+.reserve-btn {
+    font-size: 1.375rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.btn:hover {
+    background-color: #0090aa;
+}
+
+/*informationメインバー*/
+article {
+    width:80%;
+}
+.post-info {
+    position: relative;
+    padding-top:4px ;
+    margin-bottom: 40px;
+}
+.post-date {
+    background-color: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    width:100px;
+    height:100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top:0;
+    padding-top:10px;
+}
+.post-date span{
+    font-size: 1rem;
+    border-top: 1px rgba(255,255,255,0.5) solid;
+    padding-top: 6px;
+    display:block;
+    width:60%;
+    margin: 0 auto;
+}
+.post-title {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-left:120px;
+}
+
+.post-cat {
+    margin-left:120px;
+}
+.topic {
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+}
+.insta-message {
+    margin-left: 30px;
+}
+.insta-message p{
+    font-size: 1.275rem;
+    padding-bottom: 30px;
+}
+.insta-link {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:midnightblue;
+    background-image:linear-gradient(#CF2E92,#FFDD83);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.sale-message {
+    padding-left: 50px;
+}
+.sale-message p{
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.sale-message a {
+    color:crimson;
+    font-family:'Impact';
+    border-bottom:5px solid crimson;
+    font-size: 50px;
+}
+.sale-message span{
+    color:coral;
+}
+
+/*storeメイン*/
+.store {
+    display: block;
+    position: relative;
+}
+.store-contents {
+    padding-bottom: 50px;
+    border-bottom: 3px black solid ;
+}
+.store-information {
+    display: flex;
+    margin-top: 20px;
+}
+.store-information h3{
+    display: inline-block;
+    font-size: 2rem;
+    border:5px #cc0000 inset;
+    
+}
+.store-information h4{
+    padding-top: 10px;
+}
+.store-image{
+    width:100%;
+    display:grid;
+    gap:10px;
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 20px;
+    
+}
+.store-image img{
+    width:250px;
+    height:200px
+}
+.reserve {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px rgba(255,255,255,0.5) solid ;
+}
+
+/*にぎり・巻物*/
+.menu-header {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-header li{
+    
+    list-style: none;
+    border:solid black;
+    border-width:0 1px;
+}
+.menu-header a{
+    color:black;
+}
+.menu-header li{
+    width:auto;
+    font-size:1.3rem;
+    
+    transition-property: background-color ;
+    transition-duration: 1s;
+    margin: 0 auto;
+}
+.menu-header li:hover{
+    background-color:rgb(226, 223, 31);
+}
+.menu-wrapper h3{
+    font-size: 2.2rem;
+    background-image: url(../images/washi-s.jpg);
+    padding-left: 10px;
+    margin-top: 20px;
+    border: rgb(213,47,37) 3px solid;
+    font-weight: bold;
+}
+.menus-nigiri {
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+}
+.menus-nigiri h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width:150px;
+    border-bottom: saddlebrown 2px solid;
+}
+.menus-nigiri li{
+    line-height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.nigiri {
+    padding:20px 0;
+    width:33%;
+}
+.onedan {
+    margin-top: 200px;
+    color: #cc0000;
+}
+.temaki {
+    margin-bottom: 30px;
+}
+.temaki-179enn ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:200px;
+}
+.temaki-menu li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 30px;
+    list-style-position: inside;
+    padding-top:4px;
+}
+.temaki-menu h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    border-bottom: saddlebrown 2px solid;
+}
+.temaki-menu span{
+    font-size: small;
+    color:rgb(213,47,37)
+}
+.temaki-480enn p{
+    color: #cc0000;
+}
+.temaki-menu {
+    text-align: center;
+}
+
+/*一品料理*/
+.menus-ippin {
+    display: flex;
+    flex-wrap:wrap ;
+    margin-bottom: 50px;
+}
+.ippin {
+    height:auto;
+    width:410px;
+    margin-right: 30px;
+}
+.ippin h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    border: saddlebrown 2px solid;
+}
+.ippin-container {
+    display: flex;
+    flex-direction: column;
+}
+.ippin-container ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ippin-container li{
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight:bold;
+    line-height: 40px;
+    border-bottom: 1px rgb(197, 32, 95) solid;
+}
+.ippin-container span{
+    color: crimson;
+    margin-top: 10px;
+    font-size:12px;
+    line-height: 15px;
+}
+/*コース*/
+.course-wrapper h4{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.course-ex {
+    width:51%;
+    margin-top: 40px;
+    border: #FFDD83 5px ridge;
+}
+.course-info li{
+    line-height: 50px;
+    font-size: 1.375rem;
+    font-weight: bold;
+    list-style-position: inside;
+    list-style-image: url(../images/list-mark.gif);
+}
+.course-info p{
+    color: #cc0000;
+}
+.course-info h5{
+    line-height: 35px;
+    font-size: 1.15rem;
+}
+.course-drink p{
+    width:51%;
+    border:rgb(82, 190, 55) 2px ridge;
+    font-size: 1.25rem;
+}
+/*サイドバー*/
+aside {
+    width:19%;
+}
+aside p{
+    padding: 12px 10px;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li{
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a{
+    color:#432;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: #0bd;
+}
+/*フッター*/
+footer {
+    background-color:#432;
+    text-align: center;
+    padding:26px 0;
+}
+footer p{
+    color:#fff;
+    font-size:0.875rem;
+}
